@@ -1,0 +1,16 @@
+# This is a basic workflow that is manually triggered
+
+name: 01a-hola-mundo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Runs a single command using the runners shell
+    - name: Hola Mundo
+      run: echo "Hello ${{ inputs.name }!!! HOLA}"
